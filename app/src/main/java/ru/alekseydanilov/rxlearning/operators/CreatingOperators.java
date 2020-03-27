@@ -7,11 +7,15 @@ import java.util.concurrent.TimeUnit;
 
 import rx.Observable;
 import rx.Observer;
-import rx.Subscription;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.functions.Action1;
 import rx.schedulers.Schedulers;
 
+/**
+ * Created by adanilov on 27,March,2020
+ * <p>
+ * Операторы создания
+ */
 public class CreatingOperators {
 
     /**

@@ -8,6 +8,11 @@ import rx.Observable;
 import rx.Observer;
 import rx.functions.Func1;
 
+/**
+ * Created by adanilov on 27,March,2020
+ * <p>
+ * Операторы преобразования
+ */
 public class TransformingOperators {
 
     /**

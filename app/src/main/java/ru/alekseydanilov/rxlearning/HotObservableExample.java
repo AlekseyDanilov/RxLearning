@@ -9,6 +9,8 @@ import rx.Observer;
 import rx.observables.ConnectableObservable;
 
 /**
+ * Created by adanilov on 27,March,2020
+ * <p>
  * Пример Hot Observable. Основные приницпы Hot Observable:
  * 1. Hot Observable генерирует данные независимо от подписчиков;
  * 2. Все подписчики получают одни и те же данные в одно и то же время;

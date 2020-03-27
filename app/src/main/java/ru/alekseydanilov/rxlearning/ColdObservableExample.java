@@ -8,6 +8,8 @@ import rx.Observable;
 import rx.Observer;
 
 /**
+ * Created by adanilov on 27,March,2020
+ * <p>
  * Пример Cold Observable. Основные приницпы Cold Observable:
  * 1. Созданный Observable ничего не будет делать до тех пор пока на него кто-нибудь не подпишется.
  * 2. Для каждого нового подписчика он будет начинать работу заново, независимо от предыдущих подписчиков.

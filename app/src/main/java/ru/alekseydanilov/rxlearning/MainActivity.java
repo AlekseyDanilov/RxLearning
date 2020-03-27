@@ -9,6 +9,9 @@ import ru.alekseydanilov.rxlearning.operators.CreatingOperators;
 import ru.alekseydanilov.rxlearning.operators.FilteringOperators;
 import ru.alekseydanilov.rxlearning.operators.TransformingOperators;
 
+/**
+ * Created by adanilov on 27,March,2020
+ */
 public class MainActivity extends AppCompatActivity {
 
     CreatingOperators creatingOperators = new CreatingOperators();
