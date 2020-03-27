@@ -1,4 +1,4 @@
-package ru.alekseydanilov.rxlearning;
+package ru.alekseydanilov.rxlearning.operators;
 
 import android.util.Log;
 
@@ -11,7 +11,7 @@ public class ConditionalOperators {
     /**
      * Оператор takeUntil будет брать элементы пока не попадется элемент, удовлетворяющий определенному условию.
      */
-    void initTakeUntil() {
+    public void initTakeUntil() {
         Log.d("TakeUntil", "TakeUntil start");
 
         // Заданное нами условие
@@ -50,7 +50,7 @@ public class ConditionalOperators {
      * Оператор all позволяет узнать все ли элементы удовлетворяют указанному условию.
      * Условие нам необходимо оформить в виде функции.
      */
-    void initAll() {
+    public void initAll() {
         Log.d("All", "All start");
 
         // Функция проверки условия

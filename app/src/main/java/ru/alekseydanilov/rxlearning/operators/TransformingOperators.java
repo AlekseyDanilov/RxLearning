@@ -1,4 +1,4 @@
-package ru.alekseydanilov.rxlearning;
+package ru.alekseydanilov.rxlearning.operators;
 
 import android.util.Log;
 
@@ -13,7 +13,7 @@ public class TransformingOperators {
     /**
      * Оператор map преобразует все элементы последовательности
      */
-    void initMapOperator() {
+    public void initMapOperator() {
         Log.d("MapOperator", "MapOperator start");
 
         // Сперва необходимо написать функцию преобразования
@@ -53,7 +53,7 @@ public class TransformingOperators {
      *
      * @param count - количество накапливаемых элементов
      */
-    void initBufferOperator(int count) {
+    public void initBufferOperator(int count) {
         Log.d("BufferOperator", "BufferOperator start");
 
         Observable<List<Integer>> observable = Observable

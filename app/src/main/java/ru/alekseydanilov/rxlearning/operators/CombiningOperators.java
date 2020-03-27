@@ -1,4 +1,4 @@
-package ru.alekseydanilov.rxlearning;
+package ru.alekseydanilov.rxlearning.operators;
 
 import android.util.Log;
 
@@ -11,7 +11,7 @@ public class CombiningOperators {
     /**
      * Оператор merge объединит элементы из двух Observable в один
      */
-    void initMerge() {
+    public void initMerge() {
         Log.d("Merge", "Merge start");
 
         Observable<Integer> observable = Observable
@@ -42,7 +42,7 @@ public class CombiningOperators {
      * Оператор zip попарно сопоставит элементы из двух Observable.
      * Из каждой пары элементов с помощью функции будет получен один элемент, который будет добавлен в итоговый Observable.
      */
-    void initZip() {
+    public void initZip() {
         Log.d("Zip", "Zip start");
 
         // Описываем логику объединения

@@ -1,4 +1,4 @@
-package ru.alekseydanilov.rxlearning;
+package ru.alekseydanilov.rxlearning.operators;
 
 import android.util.Log;
 
@@ -17,7 +17,7 @@ public class CreatingOperators {
     /**
      * Создаёт observable из массива
      */
-    void initFromArray() {
+    public void initFromArray() {
         Log.d("FromArray", "initFromArray start");
 
         Observable<String> observable = Observable.from(new String[]{"one", "two", "three"});
@@ -49,7 +49,7 @@ public class CreatingOperators {
      * @param start - начальное значение int
      * @param count - количество элементов
      */
-    void initFromRange(int start, int count) {
+    public void initFromRange(int start, int count) {
         Log.d("FromRange", "initFromRange start");
         Observable<Integer> observable = Observable.range(start, count);
 
@@ -81,7 +81,7 @@ public class CreatingOperators {
      *
      * @param period - значение временного интервала, через который числа будут приходить
      */
-    void initFromInterval(long period) {
+    public void initFromInterval(long period) {
         Log.d("FromInterval", "initFromInterval start");
 
         final Observable<Long> observable = Observable.interval(period, TimeUnit.MILLISECONDS)
@@ -110,7 +110,7 @@ public class CreatingOperators {
     /**
      * Оператор fromCallable поможет вам сделать синхронный метод - асинхронным
      */
-    void initFromCallable() {
+    public void initFromCallable() {
         Log.d("FromCallable", "initFromCallable start");
 
         Observable.fromCallable(new CallableLongAction("5"))

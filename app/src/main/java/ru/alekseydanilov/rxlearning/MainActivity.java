@@ -3,6 +3,11 @@ package ru.alekseydanilov.rxlearning;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+import ru.alekseydanilov.rxlearning.operators.CombiningOperators;
+import ru.alekseydanilov.rxlearning.operators.ConditionalOperators;
+import ru.alekseydanilov.rxlearning.operators.CreatingOperators;
+import ru.alekseydanilov.rxlearning.operators.FilteringOperators;
+import ru.alekseydanilov.rxlearning.operators.TransformingOperators;
 
 public class MainActivity extends AppCompatActivity {
 

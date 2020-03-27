@@ -1,4 +1,4 @@
-package ru.alekseydanilov.rxlearning;
+package ru.alekseydanilov.rxlearning.operators;
 
 import android.util.Log;
 
@@ -11,7 +11,7 @@ public class FilteringOperators {
     /**
      * Оператор take - возьмёт первое количество заданных элементов
      */
-    void initTake() {
+    public void initTake() {
         Log.d("Take", "Take start");
 
         Observable<Integer> observable = Observable
@@ -41,7 +41,7 @@ public class FilteringOperators {
     /**
      * Оператор skip - пропустит заданное количество первых элементов
      */
-    void initSkip() {
+    public void initSkip() {
         Log.d("Skip", "Skip start");
 
         Observable<Integer> observable = Observable
@@ -71,7 +71,7 @@ public class FilteringOperators {
     /**
      * Оператор Distinct - отсеет дубликаты
      */
-    void initDistinct() {
+    public void initDistinct() {
         Log.d("Distinct", "Distinct start");
 
         Observable<Integer> observable = Observable
@@ -101,7 +101,7 @@ public class FilteringOperators {
     /**
      * Оператор filter отсеет только нужные элементы по описаннному алгоритму фильтрации.
      */
-    void initFilter() {
+    public void initFilter() {
         Log.d("Filter", "Filter start");
 
         // Описываем алгоритм фильтрации
