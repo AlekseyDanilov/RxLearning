@@ -52,7 +52,10 @@ public class MainActivity extends AppCompatActivity {
 
         // Примеры операторов объединений
         combiningOperators.initMerge(); // merge
+        combiningOperators.initConcatExample(); // concat
+        combiningOperators.initAmbExample(); // amb
         combiningOperators.initZip(); // zip
+        combiningOperators.combineLatestExample(); // combineLatest
 
         // Примеры операторов условий
         conditionalOperators.initTakeUntil(); // takeUntil
@@ -65,11 +68,11 @@ public class MainActivity extends AppCompatActivity {
         hotObservableExample.iniHotObservableExample();
 
         // Примеры Subject
-        subjectExample.initPublishSubjectExample();
-        subjectExample.initReplaySubjectExample();
-        subjectExample.initBehaviorSubjectExample();
-        subjectExample.initAsyncSubjectExample();
-        subjectExample.initUnicastSubjectExample();
+        subjectExample.initPublishSubjectExample(); // PublishSubject
+        subjectExample.initReplaySubjectExample(); // ReplaySubject
+        subjectExample.initBehaviorSubjectExample(); // BehaviorSubject
+        subjectExample.initAsyncSubjectExample(); // AsyncSubject
+        subjectExample.initUnicastSubjectExample(); // UnicastSubject
 
         // Примеры обработки ошибок
         errorExample.onErrorReturnExample();
