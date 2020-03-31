@@ -3,11 +3,13 @@ package ru.alekseydanilov.rxlearning;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+import ru.alekseydanilov.rxlearning.errorexample.ErrorExample;
 import ru.alekseydanilov.rxlearning.operators.CombiningOperators;
 import ru.alekseydanilov.rxlearning.operators.ConditionalOperators;
 import ru.alekseydanilov.rxlearning.operators.CreatingOperators;
 import ru.alekseydanilov.rxlearning.operators.FilteringOperators;
 import ru.alekseydanilov.rxlearning.operators.TransformingOperators;
+import ru.alekseydanilov.rxlearning.subjectexample.SubjectExample;
 
 /**
  * Created by adanilov on 27,March,2020
@@ -22,6 +24,10 @@ public class MainActivity extends AppCompatActivity {
 
     ColdObservableExample coldObservableExample = new ColdObservableExample();
     HotObservableExample hotObservableExample = new HotObservableExample();
+
+    SubjectExample subjectExample = new SubjectExample();
+
+    ErrorExample errorExample = new ErrorExample();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,7 +63,17 @@ public class MainActivity extends AppCompatActivity {
 
         // Пример реализации HotObservable
         hotObservableExample.iniHotObservableExample();
+
+        // Примеры Subject
+        subjectExample.initPublishSubjectExample();
+        subjectExample.initReplaySubjectExample();
+        subjectExample.initBehaviorSubjectExample();
+        subjectExample.initAsyncSubjectExample();
+        subjectExample.initUnicastSubjectExample();
+
+        // Примеры обработки ошибок
+        errorExample.onErrorReturnExample();
+        errorExample.onErrorResumeNextExample();
+        errorExample.retryExample();
     }
-
-
 }
